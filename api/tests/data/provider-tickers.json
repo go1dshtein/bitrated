@@ -1,0 +1,944 @@
+[
+  {
+    "ticker": "BTCUSD"
+  },
+  {
+    "ticker": "LTCUSD"
+  },
+  {
+    "ticker": "LTCBTC"
+  },
+  {
+    "ticker": "ETHUSD"
+  },
+  {
+    "ticker": "ETHBTC"
+  },
+  {
+    "ticker": "ETCBTC"
+  },
+  {
+    "ticker": "ETCUSD"
+  },
+  {
+    "ticker": "RRTUSD"
+  },
+  {
+    "ticker": "RRTBTC"
+  },
+  {
+    "ticker": "ZECUSD"
+  },
+  {
+    "ticker": "ZECBTC"
+  },
+  {
+    "ticker": "XMRUSD"
+  },
+  {
+    "ticker": "XMRBTC"
+  },
+  {
+    "ticker": "DSHUSD"
+  },
+  {
+    "ticker": "DSHBTC"
+  },
+  {
+    "ticker": "BTCEUR"
+  },
+  {
+    "ticker": "BTCJPY"
+  },
+  {
+    "ticker": "XRPUSD"
+  },
+  {
+    "ticker": "XRPBTC"
+  },
+  {
+    "ticker": "IOTUSD"
+  },
+  {
+    "ticker": "IOTBTC"
+  },
+  {
+    "ticker": "IOTETH"
+  },
+  {
+    "ticker": "EOSUSD"
+  },
+  {
+    "ticker": "EOSBTC"
+  },
+  {
+    "ticker": "EOSETH"
+  },
+  {
+    "ticker": "SANUSD"
+  },
+  {
+    "ticker": "SANBTC"
+  },
+  {
+    "ticker": "SANETH"
+  },
+  {
+    "ticker": "OMGUSD"
+  },
+  {
+    "ticker": "OMGBTC"
+  },
+  {
+    "ticker": "OMGETH"
+  },
+  {
+    "ticker": "NEOUSD"
+  },
+  {
+    "ticker": "NEOBTC"
+  },
+  {
+    "ticker": "NEOETH"
+  },
+  {
+    "ticker": "ETPUSD"
+  },
+  {
+    "ticker": "ETPBTC"
+  },
+  {
+    "ticker": "ETPETH"
+  },
+  {
+    "ticker": "QTMUSD"
+  },
+  {
+    "ticker": "QTMBTC"
+  },
+  {
+    "ticker": "QTMETH"
+  },
+  {
+    "ticker": "AVTUSD"
+  },
+  {
+    "ticker": "AVTBTC"
+  },
+  {
+    "ticker": "AVTETH"
+  },
+  {
+    "ticker": "EDOUSD"
+  },
+  {
+    "ticker": "EDOBTC"
+  },
+  {
+    "ticker": "EDOETH"
+  },
+  {
+    "ticker": "BTGUSD"
+  },
+  {
+    "ticker": "BTGBTC"
+  },
+  {
+    "ticker": "DATUSD"
+  },
+  {
+    "ticker": "DATBTC"
+  },
+  {
+    "ticker": "DATETH"
+  },
+  {
+    "ticker": "QSHUSD"
+  },
+  {
+    "ticker": "QSHBTC"
+  },
+  {
+    "ticker": "QSHETH"
+  },
+  {
+    "ticker": "YYWUSD"
+  },
+  {
+    "ticker": "YYWBTC"
+  },
+  {
+    "ticker": "YYWETH"
+  },
+  {
+    "ticker": "GNTUSD"
+  },
+  {
+    "ticker": "GNTBTC"
+  },
+  {
+    "ticker": "GNTETH"
+  },
+  {
+    "ticker": "SNTUSD"
+  },
+  {
+    "ticker": "SNTBTC"
+  },
+  {
+    "ticker": "SNTETH"
+  },
+  {
+    "ticker": "IOTEUR"
+  },
+  {
+    "ticker": "BATUSD"
+  },
+  {
+    "ticker": "BATBTC"
+  },
+  {
+    "ticker": "BATETH"
+  },
+  {
+    "ticker": "MNAUSD"
+  },
+  {
+    "ticker": "MNABTC"
+  },
+  {
+    "ticker": "MNAETH"
+  },
+  {
+    "ticker": "FUNUSD"
+  },
+  {
+    "ticker": "FUNBTC"
+  },
+  {
+    "ticker": "FUNETH"
+  },
+  {
+    "ticker": "ZRXUSD"
+  },
+  {
+    "ticker": "ZRXBTC"
+  },
+  {
+    "ticker": "ZRXETH"
+  },
+  {
+    "ticker": "TNBUSD"
+  },
+  {
+    "ticker": "TNBBTC"
+  },
+  {
+    "ticker": "TNBETH"
+  },
+  {
+    "ticker": "SPKUSD"
+  },
+  {
+    "ticker": "SPKBTC"
+  },
+  {
+    "ticker": "SPKETH"
+  },
+  {
+    "ticker": "TRXUSD"
+  },
+  {
+    "ticker": "TRXBTC"
+  },
+  {
+    "ticker": "TRXETH"
+  },
+  {
+    "ticker": "RCNUSD"
+  },
+  {
+    "ticker": "RCNBTC"
+  },
+  {
+    "ticker": "RCNETH"
+  },
+  {
+    "ticker": "RLCUSD"
+  },
+  {
+    "ticker": "RLCBTC"
+  },
+  {
+    "ticker": "RLCETH"
+  },
+  {
+    "ticker": "AIDUSD"
+  },
+  {
+    "ticker": "AIDBTC"
+  },
+  {
+    "ticker": "AIDETH"
+  },
+  {
+    "ticker": "SNGUSD"
+  },
+  {
+    "ticker": "SNGBTC"
+  },
+  {
+    "ticker": "SNGETH"
+  },
+  {
+    "ticker": "REPUSD"
+  },
+  {
+    "ticker": "REPBTC"
+  },
+  {
+    "ticker": "REPETH"
+  },
+  {
+    "ticker": "ELFUSD"
+  },
+  {
+    "ticker": "ELFBTC"
+  },
+  {
+    "ticker": "ELFETH"
+  },
+  {
+    "ticker": "BTCGBP"
+  },
+  {
+    "ticker": "ETHEUR"
+  },
+  {
+    "ticker": "ETHJPY"
+  },
+  {
+    "ticker": "ETHGBP"
+  },
+  {
+    "ticker": "NEOEUR"
+  },
+  {
+    "ticker": "NEOJPY"
+  },
+  {
+    "ticker": "NEOGBP"
+  },
+  {
+    "ticker": "EOSEUR"
+  },
+  {
+    "ticker": "EOSJPY"
+  },
+  {
+    "ticker": "EOSGBP"
+  },
+  {
+    "ticker": "IOTJPY"
+  },
+  {
+    "ticker": "IOTGBP"
+  },
+  {
+    "ticker": "IOSUSD"
+  },
+  {
+    "ticker": "IOSBTC"
+  },
+  {
+    "ticker": "IOSETH"
+  },
+  {
+    "ticker": "AIOUSD"
+  },
+  {
+    "ticker": "AIOBTC"
+  },
+  {
+    "ticker": "AIOETH"
+  },
+  {
+    "ticker": "REQUSD"
+  },
+  {
+    "ticker": "REQBTC"
+  },
+  {
+    "ticker": "REQETH"
+  },
+  {
+    "ticker": "RDNUSD"
+  },
+  {
+    "ticker": "RDNBTC"
+  },
+  {
+    "ticker": "RDNETH"
+  },
+  {
+    "ticker": "LRCUSD"
+  },
+  {
+    "ticker": "LRCBTC"
+  },
+  {
+    "ticker": "LRCETH"
+  },
+  {
+    "ticker": "WAXUSD"
+  },
+  {
+    "ticker": "WAXBTC"
+  },
+  {
+    "ticker": "WAXETH"
+  },
+  {
+    "ticker": "DAIUSD"
+  },
+  {
+    "ticker": "DAIBTC"
+  },
+  {
+    "ticker": "DAIETH"
+  },
+  {
+    "ticker": "CFIUSD"
+  },
+  {
+    "ticker": "CFIBTC"
+  },
+  {
+    "ticker": "CFIETH"
+  },
+  {
+    "ticker": "AGIUSD"
+  },
+  {
+    "ticker": "AGIBTC"
+  },
+  {
+    "ticker": "AGIETH"
+  },
+  {
+    "ticker": "BFTUSD"
+  },
+  {
+    "ticker": "BFTBTC"
+  },
+  {
+    "ticker": "BFTETH"
+  },
+  {
+    "ticker": "MTNUSD"
+  },
+  {
+    "ticker": "MTNBTC"
+  },
+  {
+    "ticker": "MTNETH"
+  },
+  {
+    "ticker": "ODEUSD"
+  },
+  {
+    "ticker": "ODEBTC"
+  },
+  {
+    "ticker": "ODEETH"
+  },
+  {
+    "ticker": "ANTUSD"
+  },
+  {
+    "ticker": "ANTBTC"
+  },
+  {
+    "ticker": "ANTETH"
+  },
+  {
+    "ticker": "DTHUSD"
+  },
+  {
+    "ticker": "DTHBTC"
+  },
+  {
+    "ticker": "DTHETH"
+  },
+  {
+    "ticker": "MITUSD"
+  },
+  {
+    "ticker": "MITBTC"
+  },
+  {
+    "ticker": "MITETH"
+  },
+  {
+    "ticker": "STJUSD"
+  },
+  {
+    "ticker": "STJBTC"
+  },
+  {
+    "ticker": "STJETH"
+  },
+  {
+    "ticker": "XLMUSD"
+  },
+  {
+    "ticker": "XLMEUR"
+  },
+  {
+    "ticker": "XLMJPY"
+  },
+  {
+    "ticker": "XLMGBP"
+  },
+  {
+    "ticker": "XLMBTC"
+  },
+  {
+    "ticker": "XLMETH"
+  },
+  {
+    "ticker": "XVGUSD"
+  },
+  {
+    "ticker": "XVGEUR"
+  },
+  {
+    "ticker": "XVGJPY"
+  },
+  {
+    "ticker": "XVGGBP"
+  },
+  {
+    "ticker": "XVGBTC"
+  },
+  {
+    "ticker": "XVGETH"
+  },
+  {
+    "ticker": "BCIUSD"
+  },
+  {
+    "ticker": "BCIBTC"
+  },
+  {
+    "ticker": "MKRUSD"
+  },
+  {
+    "ticker": "MKRBTC"
+  },
+  {
+    "ticker": "MKRETH"
+  },
+  {
+    "ticker": "KNCUSD"
+  },
+  {
+    "ticker": "KNCBTC"
+  },
+  {
+    "ticker": "KNCETH"
+  },
+  {
+    "ticker": "POAUSD"
+  },
+  {
+    "ticker": "POABTC"
+  },
+  {
+    "ticker": "POAETH"
+  },
+  {
+    "ticker": "LYMUSD"
+  },
+  {
+    "ticker": "LYMBTC"
+  },
+  {
+    "ticker": "LYMETH"
+  },
+  {
+    "ticker": "UTKUSD"
+  },
+  {
+    "ticker": "UTKBTC"
+  },
+  {
+    "ticker": "UTKETH"
+  },
+  {
+    "ticker": "VEEUSD"
+  },
+  {
+    "ticker": "VEEBTC"
+  },
+  {
+    "ticker": "VEEETH"
+  },
+  {
+    "ticker": "DADUSD"
+  },
+  {
+    "ticker": "DADBTC"
+  },
+  {
+    "ticker": "DADETH"
+  },
+  {
+    "ticker": "ORSUSD"
+  },
+  {
+    "ticker": "ORSBTC"
+  },
+  {
+    "ticker": "ORSETH"
+  },
+  {
+    "ticker": "AUCUSD"
+  },
+  {
+    "ticker": "AUCBTC"
+  },
+  {
+    "ticker": "AUCETH"
+  },
+  {
+    "ticker": "POYUSD"
+  },
+  {
+    "ticker": "POYBTC"
+  },
+  {
+    "ticker": "POYETH"
+  },
+  {
+    "ticker": "FSNUSD"
+  },
+  {
+    "ticker": "FSNBTC"
+  },
+  {
+    "ticker": "FSNETH"
+  },
+  {
+    "ticker": "CBTUSD"
+  },
+  {
+    "ticker": "CBTBTC"
+  },
+  {
+    "ticker": "CBTETH"
+  },
+  {
+    "ticker": "ZCNUSD"
+  },
+  {
+    "ticker": "ZCNBTC"
+  },
+  {
+    "ticker": "ZCNETH"
+  },
+  {
+    "ticker": "SENUSD"
+  },
+  {
+    "ticker": "SENBTC"
+  },
+  {
+    "ticker": "SENETH"
+  },
+  {
+    "ticker": "NCAUSD"
+  },
+  {
+    "ticker": "NCABTC"
+  },
+  {
+    "ticker": "NCAETH"
+  },
+  {
+    "ticker": "CNDUSD"
+  },
+  {
+    "ticker": "CNDBTC"
+  },
+  {
+    "ticker": "CNDETH"
+  },
+  {
+    "ticker": "CTXUSD"
+  },
+  {
+    "ticker": "CTXBTC"
+  },
+  {
+    "ticker": "CTXETH"
+  },
+  {
+    "ticker": "PAIUSD"
+  },
+  {
+    "ticker": "PAIBTC"
+  },
+  {
+    "ticker": "SEEUSD"
+  },
+  {
+    "ticker": "SEEBTC"
+  },
+  {
+    "ticker": "SEEETH"
+  },
+  {
+    "ticker": "ESSUSD"
+  },
+  {
+    "ticker": "ESSBTC"
+  },
+  {
+    "ticker": "ESSETH"
+  },
+  {
+    "ticker": "ATMUSD"
+  },
+  {
+    "ticker": "ATMBTC"
+  },
+  {
+    "ticker": "ATMETH"
+  },
+  {
+    "ticker": "HOTUSD"
+  },
+  {
+    "ticker": "HOTBTC"
+  },
+  {
+    "ticker": "HOTETH"
+  },
+  {
+    "ticker": "DTAUSD"
+  },
+  {
+    "ticker": "DTABTC"
+  },
+  {
+    "ticker": "DTAETH"
+  },
+  {
+    "ticker": "IQXUSD"
+  },
+  {
+    "ticker": "IQXBTC"
+  },
+  {
+    "ticker": "IQXEOS"
+  },
+  {
+    "ticker": "WPRUSD"
+  },
+  {
+    "ticker": "WPRBTC"
+  },
+  {
+    "ticker": "WPRETH"
+  },
+  {
+    "ticker": "ZILUSD"
+  },
+  {
+    "ticker": "ZILBTC"
+  },
+  {
+    "ticker": "ZILETH"
+  },
+  {
+    "ticker": "BNTUSD"
+  },
+  {
+    "ticker": "BNTBTC"
+  },
+  {
+    "ticker": "BNTETH"
+  },
+  {
+    "ticker": "ABSUSD"
+  },
+  {
+    "ticker": "ABSETH"
+  },
+  {
+    "ticker": "XRAUSD"
+  },
+  {
+    "ticker": "XRAETH"
+  },
+  {
+    "ticker": "MANUSD"
+  },
+  {
+    "ticker": "MANETH"
+  },
+  {
+    "ticker": "BBNUSD"
+  },
+  {
+    "ticker": "BBNETH"
+  },
+  {
+    "ticker": "NIOUSD"
+  },
+  {
+    "ticker": "NIOETH"
+  },
+  {
+    "ticker": "DGXUSD"
+  },
+  {
+    "ticker": "DGXETH"
+  },
+  {
+    "ticker": "VETUSD"
+  },
+  {
+    "ticker": "VETBTC"
+  },
+  {
+    "ticker": "VETETH"
+  },
+  {
+    "ticker": "UTNUSD"
+  },
+  {
+    "ticker": "UTNETH"
+  },
+  {
+    "ticker": "TKNUSD"
+  },
+  {
+    "ticker": "TKNETH"
+  },
+  {
+    "ticker": "GOTUSD"
+  },
+  {
+    "ticker": "GOTEUR"
+  },
+  {
+    "ticker": "GOTETH"
+  },
+  {
+    "ticker": "XTZUSD"
+  },
+  {
+    "ticker": "XTZBTC"
+  },
+  {
+    "ticker": "CNNUSD"
+  },
+  {
+    "ticker": "CNNETH"
+  },
+  {
+    "ticker": "BOXUSD"
+  },
+  {
+    "ticker": "BOXETH"
+  },
+  {
+    "ticker": "TRXEUR"
+  },
+  {
+    "ticker": "TRXGBP"
+  },
+  {
+    "ticker": "TRXJPY"
+  },
+  {
+    "ticker": "MGOUSD"
+  },
+  {
+    "ticker": "MGOETH"
+  },
+  {
+    "ticker": "RTEUSD"
+  },
+  {
+    "ticker": "RTEETH"
+  },
+  {
+    "ticker": "YGGUSD"
+  },
+  {
+    "ticker": "YGGETH"
+  },
+  {
+    "ticker": "MLNUSD"
+  },
+  {
+    "ticker": "MLNETH"
+  },
+  {
+    "ticker": "WTCUSD"
+  },
+  {
+    "ticker": "WTCETH"
+  },
+  {
+    "ticker": "CSXUSD"
+  },
+  {
+    "ticker": "CSXETH"
+  },
+  {
+    "ticker": "OMNUSD"
+  },
+  {
+    "ticker": "OMNBTC"
+  },
+  {
+    "ticker": "INTUSD"
+  },
+  {
+    "ticker": "INTETH"
+  },
+  {
+    "ticker": "DRNUSD"
+  },
+  {
+    "ticker": "DRNETH"
+  },
+  {
+    "ticker": "PNKUSD"
+  },
+  {
+    "ticker": "PNKETH"
+  },
+  {
+    "ticker": "DGBUSD"
+  },
+  {
+    "ticker": "DGBBTC"
+  },
+  {
+    "ticker": "BSVUSD"
+  },
+  {
+    "ticker": "BSVBTC"
+  },
+  {
+    "ticker": "BABUSD"
+  },
+  {
+    "ticker": "BABBTC"
+  }
+]
