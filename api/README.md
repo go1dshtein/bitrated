@@ -2,10 +2,10 @@
 
 1. Setup environment
 
-  python3 -mvenv ./env
-  . ./env/bin/activate
-  pip install --upgrade pip setuptools
-  pip install -r requirements.txt
+    python3 -mvenv ./env
+    . ./env/bin/activate
+    pip install --upgrade pip setuptools
+    pip install -r requirements.txt
 
 2. Run server
 
