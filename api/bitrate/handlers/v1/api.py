@@ -42,7 +42,7 @@ class TickersHandler(BaseHandler):
             result = await self.provider.get_tickers()
 
         if not result:
-            self.send_error(503, 'service temporary unavailable')
+            self.send_error(503, reason='service temporary unavailable')
             return
 
         self.send(result)
@@ -56,7 +56,7 @@ class CandlesHandler(BaseHandler):
         result = await self.provider.get_candles(ticker)
 
         if not result:
-            self.send_error(503, 'service temporary unavailable')
+            self.send_error(503, reason='service temporary unavailable')
             return
 
         self.send(result)
