@@ -1,0 +1,6 @@
+---
+- name: api restart
+  docker_container:
+    name: api
+    state: started
+    restart: true

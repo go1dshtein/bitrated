@@ -1,0 +1,33 @@
+---
+- name: Ensure prometheus directories exists
+  file: state=directory
+        path={{item}}
+        recurse=true
+        mode=0755
+        owner=nobody
+        group=nogroup
+  with_items:
+    - "{{prometheus_home}}/data"
+    - "{{prometheus_home}}/config"
+  notify: prometheus restart
+
+- name: Configure prometheus
+  template: src={{item}}.j2 dest={{prometheus_home}}/config/{{item}} mode=0755
+  with_items:
+    - prometheus.yml
+  notify: prometheus restart
+
+- name: Run prometheus
+  docker_container:
+    name: prometheus
+    image: prom/prometheus:v2.5.0
+    hostname: prometheus
+    restart_policy: always
+    volumes:
+      - "{{prometheus_home}}/data:/data"
+      - "{{prometheus_home}}/config:/config"
+    command: "--config.file=/config/prometheus.yml --storage.tsdb.path=/data"
+    links:
+      - "api"
+    published_ports:
+      - 9090:9090

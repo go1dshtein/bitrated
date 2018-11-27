@@ -1,0 +1,4 @@
+---
+- src: git@github.com:Stouts/Stouts.sentry.git
+  scm: git
+  version: "1.10.7"

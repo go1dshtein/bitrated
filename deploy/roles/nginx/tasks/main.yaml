@@ -1,0 +1,31 @@
+---
+- name: Install nginx
+  apt:
+    name: nginx
+    update_cache: true
+
+- name: Setup available sites
+  template:
+    src: "{{ item }}.site.j2"
+    dest: "/etc/nginx/sites-available/{{ item }}"
+  with_items:
+    - product
+    - sentry
+    - metrics
+  notify: nginx restart
+
+- name: Setup enabled sites
+  file:
+    src: "/etc/nginx/sites-available/{{ item }}"
+    dest: "/etc/nginx/sites-enabled/{{ item }}"
+    state: link
+  with_items:
+    - product
+    - sentry
+    - metrics
+  notify: nginx restart
+
+- name: Start nginx
+  service:
+    name: nginx
+    state: started

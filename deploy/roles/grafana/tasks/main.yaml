@@ -1,0 +1,32 @@
+---
+- name: Ensure grafana directories exists
+  file: state=directory
+        path={{item}}
+        mode=0777
+        owner=nobody
+        group=nogroup
+  with_items:
+    - "{{grafana_home}}"
+    - "{{grafana_home}}/data"
+    - "{{grafana_home}}/config"
+  notify: grafana restart
+
+- name: Configure grafana
+  template: src={{item}}.j2 dest={{grafana_home}}/config/{{item}} mode=0755
+  with_items:
+    - datasources.yml
+  notify: grafana restart
+
+- name: Run grafana
+  docker_container:
+    name: grafana
+    image: grafana/grafana:5.3.4
+    hostname: grafana
+    restart_policy: always
+    volumes:
+      - "{{grafana_home}}/data:/var/lib/grafana"
+      - "{{grafana_home}}/config/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml"
+    links:
+      - "prometheus"
+    published_ports:
+      - 3000:3000

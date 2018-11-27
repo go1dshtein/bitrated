@@ -1,0 +1,23 @@
+server {
+	listen 80;
+	root /var/www/html;
+
+	# Add index.php to the list if you are using PHP
+	index index.html index.htm index.nginx-debian.html;
+
+	server_name {{ product_endpoint }};
+
+	location /api {
+            proxy_pass       http://localhost:8080/api;
+            proxy_set_header Host      $host;
+            proxy_set_header X-Real-IP $remote_addr;
+        }
+
+	location /metrics {
+	    deny all;
+	    allow 127.0.0.1;
+            proxy_pass       http://localhost:8080/metrics;
+            proxy_set_header Host      $host;
+            proxy_set_header X-Real-IP $remote_addr;
+        }
+}

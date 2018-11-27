@@ -1,0 +1,45 @@
+---
+- name: install python
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: install python 2.x
+      raw: test -e /usr/bin/python || (apt update && apt install -y python-simplejson)
+      register: test
+      changed_when: test.stdout
+
+- name: install docker
+  hosts: all
+  tags:
+    - docker
+  roles:
+    - docker
+
+- name: setup api
+  hosts: backend
+  tags:
+    - api
+  roles:
+    - api
+
+- name: setup sentry
+  hosts: sentry
+  tags:
+    - sentry
+  roles:
+    - Stouts.sentry
+
+- name: setup metrics
+  hosts: metrics
+  tags:
+    - metrics
+  roles:
+    - prometheus
+    - grafana
+
+- name: setup nginx
+  hosts: balancer
+  tags:
+    - balancer
+  roles:
+    - nginx

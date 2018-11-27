@@ -1,0 +1,32 @@
+---
+- name: Ensure api directories exists
+  file: state=directory
+        path={{item}}
+        mode=0755
+  with_items:
+    - "{{api_home}}"
+    - "{{api_home}}/repo"
+
+- name: Checkout api service
+  git:
+    repo: "{{ api_repository }}"
+    dest: "{{ api_home }}/repo"
+
+- name: Build docker image
+  docker_image:
+     path: "{{ api_home }}/repo/api"
+     name: "api"
+     force: true
+  notify: api restart
+
+- name: Start api
+  docker_container:
+    name: api
+    image: "api:latest"
+    hostname: api
+    restart_policy: always
+    published_ports:
+      - 8080:8080
+    env:
+      BITRATE_ENVIRONMENT: "{{target}}"
+      BITRATE_SENTRY_DSN: "http://6b46bf70906a4dc89bb65b0e5289e8fe@sentry.bitrate.goldshtein.org/2"
