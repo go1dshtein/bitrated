@@ -6,7 +6,6 @@ from tornado import web
 
 from bitrate.config import ENVIRONMENT
 
-
 logger = logging.getLogger(__name__)
 
 
@@ -26,6 +25,10 @@ class BaseHandler(web.RequestHandler):
                 trace.append(line)
 
         self.write(json.dumps(result))
+
+    def set_default_headers(self):
+        self.set_header('Content-type', 'application/json')
+        self.set_header('Access-Control-Allow-Origin', '*')
 
 
 class TickersHandler(BaseHandler):

@@ -16,7 +16,7 @@ def app(provider):
 
 @pytest.mark.gen_test
 async def test_tickers_handler(http_client, base_url):
-    response = await http_client.fetch('%s/v1/tickers' % base_url,
+    response = await http_client.fetch('%s/api/v1/tickers' % base_url,
                                        raise_error=False)
     assert response.code == 200
     data = json.loads(response.body)['data']
@@ -26,7 +26,7 @@ async def test_tickers_handler(http_client, base_url):
 
 @pytest.mark.gen_test
 async def test_ticker_handler(http_client, base_url):
-    response = await http_client.fetch('%s/v1/tickers/BTCUSD' % base_url,
+    response = await http_client.fetch('%s/api/v1/tickers/BTCUSD' % base_url,
                                        raise_error=False)
     assert response.code == 200
     data = json.loads(response.body)['data']
@@ -44,7 +44,7 @@ async def test_ticker_handler(http_client, base_url):
 @pytest.mark.gen_test
 async def test_candles_handler(http_client, base_url):
     response = await http_client.fetch(
-        '%s/v1/tickers/BTCUSD/candles' % base_url,
+        '%s/api/v1/tickers/BTCUSD/candles' % base_url,
         raise_error=False)
 
     assert response.code == 200
