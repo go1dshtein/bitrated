@@ -1,0 +1,31 @@
+---
+- name: Ensure ui directories exists
+  file: state=directory
+        path={{item}}
+        mode=0755
+  with_items:
+    - "{{ui_home}}"
+    - "{{ui_home}}/repo"
+
+- name: Checkout ui service
+  git:
+    repo: "{{ ui_repository }}"
+    dest: "{{ ui_home }}/repo"
+
+- name: Build docker image
+  docker_image:
+     path: "{{ ui_home }}/repo/ui"
+     name: "ui"
+     force: true
+     buildargs:
+       API_URL: "{{ api_url }}"
+  notify: ui restart
+
+- name: Start ui
+  docker_container:
+    name: ui
+    image: "ui:latest"
+    hostname: ui
+    restart_policy: always
+    published_ports:
+      - 8081:80

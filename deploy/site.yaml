@@ -15,12 +15,19 @@
   roles:
     - docker
 
-- name: setup api
+- name: setup backend
   hosts: backend
   tags:
     - api
   roles:
     - api
+
+- name: setup frontend
+  hosts: frontend
+  tags:
+    - ui
+  roles:
+    - ui
 
 - name: setup sentry
   hosts: sentry
@@ -37,7 +44,7 @@
     - prometheus
     - grafana
 
-- name: setup nginx
+- name: setup balancer
   hosts: balancer
   tags:
     - balancer

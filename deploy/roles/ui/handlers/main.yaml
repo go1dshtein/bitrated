@@ -1,0 +1,6 @@
+---
+- name: ui restart
+  docker_container:
+    name: ui
+    state: started
+    restart: true

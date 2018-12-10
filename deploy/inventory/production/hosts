@@ -25,5 +25,8 @@ sentry_endpoint=sentry.bitrate.goldshtein.org
 metrics_endpoint=metrics.bitrate.goldshtein.org
 product_endpoint=bitrate.goldshtein.org
 
+[frontend:vars]
+api_url=http://bitrate.goldshtein.org
+
 [all:vars]
 target=prod
